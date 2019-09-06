@@ -1,0 +1,128 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Avenir", sans-serif;
+    background: black;
+
+}
+button{
+font-family: "Avenir", sans-serif;
+
+}   
+#hours,#minutes ,#seconds{
+
+font-family: 'Black Ops One', cursive;
+background-color: #ffffff7a;
+border-radius: 15px;
+/* margin: auto; */
+/* margin-top: 197.5px; */
+width: 400px;
+font-size: 60px;
+}
+
+::after, ::before {
+box-sizing: border-box;
+} 
+    
+.start{
+    display: block;
+    outline: none;
+    border: none;
+    width: 100px;
+    height: 50px;
+    margin: 10px auto;
+    font-size: 22px;
+    font-weight: 100;
+    line-height: 52px;
+    border-radius: 40px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.1s ease-out;
+    background-color: #967bce;
+    color: #f2f2f2;
+}
+.stop{
+    display: block;
+    outline: none;
+    border: none;
+    width: 100px;
+    height: 50px;
+    margin: 10px auto;
+    font-size: 22px;
+    font-weight: 100;
+    line-height: 52px;
+    border-radius: 40px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.1s ease-out;
+    background-color: #df699d;
+    color: #f2f2f2;
+  
+}
+.reset{
+    display: block;
+    outline: none;
+    border: none;
+    width: 100px;
+    height: 50px;
+    margin: 10px auto;
+    font-size: 22px;
+    font-weight: 100;
+    line-height: 52px;
+    border-radius: 40px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.1s ease-out;
+    background-color: #69dfdc;
+    color: #f2f2f2;
+}
+span{
+    text-align: center;
+}
+#main-display{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* border: 10px solid #656161; */
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(to bottom, #9e9d9d66, #4b78bb);
+    box-shadow: 0 0 20px 10px rgba(135, 144, 195, 0.6);
+}
+.span-div{
+    display: flow-root;
+    text-align: center;
+    margin: 100px;
+}
+.dots-span{
+    font-family: 'Black Ops One', cursive;
+     /* margin-top: 197.5px; */
+    width: 400px;
+    font-size: 60px;
+}
+#button-div{
+    margin: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+@media only screen and  (max-width:660px){
+    div#main-display {
+        width: 400px;
+        height: 450px;
+    }
+    .span-div {
+        margin: 100px 0px 70px 0px;
+    }
+    span {
+        font-size: 55px !important;
+    }
+    div#button-div {
+        margin: 10px 5px;
+    }
+    button{
+        margin:10px 5px !important;
+    }
+}
